@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-fixed min-h-screen min-w-full bg-cover bg-gradient-to-t from-purple to-black;
+  }
+  html {
+    @apply sm:scroll-smooth;
+  }
+  section {
+    @apply scroll-mt-14;
+  }
+  h2 {
+    @apply text-darkblue font-bold text-7xl font-bebas tracking-wider;
+  }
+  h3 {
+    @apply text-darkblue font-bold text-5xl font-bebas tracking-wider;
+  }
+  h4 {
+    @apply text-4xl text-darkblue font-bebas;
+  }
+  p {
+    @apply text-white font-asap text-[1rem];
+  }
+  .default-button {
+    @apply text-white font-asap rounded-xl mx-auto relative before:block before:absolute before:bg-lightblue before:inset-0 hover:before:-translate-y-[0.4rem] hover:before:-translate-x-[0.4rem] before:w-full before:h-full before:rounded-xl before:-z-50 after:block after:inset-0 after:absolute after:bg-darkblue after:w-full after:h-full after:rounded-xl after:-z-50 hover:after:translate-y-[0.4rem] hover:after:translate-x-[0.4rem] transition-all ease-in-out delay-1000;
+  }
+  .closed {
+    @apply hidden;
+  }
+}
